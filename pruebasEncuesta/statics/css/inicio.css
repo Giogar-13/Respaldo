@@ -1,0 +1,17 @@
+html {
+    align-content: center;
+    background-color: #52A4AA;
+    font-family: 'Amatic SC', cursive;
+    font-size: larger;
+    text-align: center;
+}
+
+div#seleciona * {
+    color: wheat;
+    text-decoration: none;
+}
+
+header img {
+    border-radius: 30px;
+    width: 25%;
+}

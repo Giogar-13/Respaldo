@@ -1,0 +1,55 @@
+body {
+    background-color: darkgray;
+}
+
+div#contenedor {
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    font-size: large;
+}
+
+div.infoPerfil #edit {
+    background-color: #FF6C6C;
+    color: black;
+    padding: 2% 2% 2% 2%;
+    text-decoration: none;
+    text-align: center;
+    width: 30%;
+}
+
+div.botones #botones {
+    background-color: #FF6C6C;
+    color: black;
+    padding: 2% 100% 1% 2%;
+    margin-top: 20%;
+    margin-left: 40%;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    display: flex;
+}
+div.botones #botones a{
+  margin-left: 50%;
+}
+
+div.botones {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+}
+
+div.infoPerfil {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    padding: 1% 2% 2% 2%;
+}
+
+div.infoPerfil * {
+    margin: 2% 10% 1% 10%;
+}
+
+div.infoPerfil img {
+    width: 70%;
+}

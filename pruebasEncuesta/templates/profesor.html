@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="spa">
+
+<head>
+    <title>Registro Profesor</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form action="../dynamics/php/registro.php" method="POST">
+        <h1>Registro Profesor</h1>
+        RFC con homoclave:
+        <br><input type="text" name="rfc" pattern="[A-Z]{4}[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])([0-9]|[A-Z]){3}">
+
+        <br> Nombre(s):
+        <br><input type="text" name="name" pattern="([A-ZÁÉÍÓÚÑ][a-záéíóúñ]*\s?){1,}" required title="El nombre(s) debe empezar en mayúscula y continuar en minúscula">
+
+        <br> Apellido paterno:
+        <br><input type="text" name="apaterno" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*" required title="El Apellido debe empezar en mayúscula y terminar en minúscula">
+
+        <br>Apellido materno:<br>
+        <input type="text" name="amaterno" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*" required title="El Apellido debe empezar en mayúscula y terminar en minúscula">
+
+        <br>Número de trabajador:
+        <br><input type="number" name="ntrabajador" pattern="\d{10}">
+
+        <br>Correo electrónico<br>
+        <input type="text" name="correoElec" pattern=".+@.+\..+">
+
+        <br>Contraseña<br>
+        <input type="password" name="contra" pattern="(?=.*[A-Z])(?=.*[\.,!@#$&*])(?=.*[0-9])(?=.*[a-z]).{10,}" required title="La contraseña debe tener 10 caracteres de longitud, mayúsculas, minúsculas, números y caracteres especiales."><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+
+<!--profesor deberá ingresar su RFC con
+    homoclave, nombre, apellido paterno,
+apellido materno, número de trabajador,
+correo electrónico y una contraseña segura.-->

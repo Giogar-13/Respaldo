@@ -1,0 +1,113 @@
+
+#content-pregunta2{
+  display: none;
+}
+#content-pregunta3{
+  display: none;
+}
+#content-pregunta4{
+  display: none;
+}
+#content-pregunta5{
+  display: none;
+}
+
+#preg{
+  width: 40%;
+}
+#new{
+  display: none;
+}
+#agregar{
+  display: none;
+}
+
+#preg2{
+  width: 40%;
+}
+#new2{
+  display: none;
+}
+#agregar2{
+  display: none;
+}
+
+#preg3{
+  width: 40%;
+}
+#new3{
+  display: none;
+}
+#agregar3{
+  display: none;
+}
+#preg4{
+  width: 40%;
+}
+#new4{
+  display: none;
+}
+#agregar4{
+  display: none;
+}
+#preg5{
+  width: 40%;
+}
+#new5{
+  display: none;
+}
+#agregar5{
+  display: none;
+}
+#generar1{
+  display: none;
+}
+
+#generar2{
+  display: none;
+}
+#generar3{
+  display: none;
+}
+#generar4{
+  display: none;
+}
+
+#hacerEnc{
+  display: none;
+}
+#finalizarEnc{
+  display: none;
+}
+#labelInfGen{
+  display: none;
+}
+#infoGeneral{
+  display: none;
+  width: 30%
+}
+#labelDesc{
+  display: none;
+}
+#descripcion{
+  display: none;
+  width: 60%;
+}
+#selectUsuarios{
+  display: none;
+}
+#enviarUsu{
+  display: none;
+}
+#cajaUsuarios{
+  display: none;
+}
+#selectCategoria{
+  display: none;
+}
+#labelCategoria{
+  display: none;
+}
+#agregarCat{
+  display: none;
+}

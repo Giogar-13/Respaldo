@@ -1,0 +1,52 @@
+a{
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: larger;
+  margin: 7% 5% 5% 5%;
+  padding: 1% 1% 1% 1%;
+  border-top-left-radius: 30px;
+  background-color: #6E6E80;
+}
+
+body {
+    align-content: center;
+    text-align: center;
+    background-image: url(../img/fondouno.jpg);
+    /*background-position: center center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amatic SC', cursive;
+    font-size: larger;
+}
+
+div#data {
+    background-color: #FB5B5A;
+    margin: 10% 10% 10% 10%;
+}
+
+div#data label {
+    color: black;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    margin: 10% 10% 0% 10%;
+}
+
+div#data h1 {
+    font-family: 'Ruslan Display', cursive;
+}
+
+div#data input#envio {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: larger;
+    margin: 7% 5% 5% 5%;
+    padding: 1% 1% 1% 1%;
+    border-top-left-radius: 30px;
+    background-color: #6E6E80;
+}
+
+div#data input {
+    background-color: #FB5B5A;
+    border-left: #FB5B5A;
+    border-right: #FB5B5A;
+    border-top: #FB5B5A;
+    border-bottom-color: blue;
+}

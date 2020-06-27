@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+#refresh{
+  display: none;
+  width: 20%;
+  margin-left: 77%;
+}
+#denunciar{
+  width: 20%;
+  margin-left: 75%;
+}
+
+#enviar{
+  width: 20%;
+  margin-left: 75%;
+}
+#content{
+  position: relative;
+  margin-top: 10%;
+  align-items: center;
+  display:inline-block;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left:2%;
+}
+
+#cierre{
+  color: red;
+  font-size: 30px;;
+  position: absolute;
+  margin-left: 85%;
+}
+
+#cierre:hover{
+  cursor: pointer;
+}
+
+.modal{
+  background-color: rgba(50,50,50,0.5);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal .contento{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal .contento .head{
+  width: 100%;
+  line-height: 3;
+  box-sizing: border-box;
+  padding-left: 2em;
+  border-bottom:  2px solid gray;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.body{
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 5%;
+  width: 50%;
+  justify-content: center;
+}
+
+
+.opcion{
+  font-family: 'Rokkitt', serif;
+  font-size: 25px;
+}
+
+.aEncuesta{
+  background-color: #00f462;
+  border-radius: 20%;
+  color: #8F3826;
+  border: none;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+}
+.denunciar{
+  background-color: yellow;
+  border-radius: 20%;
+  color: #8F3826;
+  border: none;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.5s ease;
+  color: black;
+  font-size: 20px;
+  margin-top: 2%;
+}
+.eliminar{
+  background-color: red;
+  border-radius: 20% ;
+  color: #8F3826;
+  border: none;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+  margin-top: 5%;
+
+}
+.graficar{
+  background-color: red;
+  border-radius: 20% ;
+  color: #8F3826;
+  border: none;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+  margin-top: 5%;
+
+}
+
+.aEncuesta:hover{
+  background-color: #00C44F;
+  cursor: pointer;
+}
+.denunciar:hover{
+  background-color: #F5ED2E;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+}
+.show{
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+ display:inline-grid;
+ position: relative;
+ width:100%;
+}
+
+header {
+  background-color: #FF7069;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  background-color: #9970C0;
+  cursor: pointer;
+}
+header nav ul li a:hover{
+  color: #FC863D;
+  text-decoration: none;
+  cursor: pointer;
+}
+form{
+  width: 100%;
+}
+
+table{
+  border-collapse: collapse;
+  border: 2px solid purple;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td{
+  align-content:center;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid purple;
+  padding: 5px;
+  padding: 0.3em;
+  font-family: 'Rokkitt', serif;
+  font-size: 25px;
+
+}
+th{
+  font-family: 'Acme', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid purple;
+  padding: 0.3em;
+}
+
+
+@media screen and (max-width: 1400px){
+
+  #content{
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  #content{
+    margin-top: 23%;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  #content{
+    margin-top: 26%;
+  }
+}

@@ -18,6 +18,6 @@ while ($res = mysqli_fetch_array($resRegistros,MYSQLI_ASSOC))
   }
 }
 echo "</select>
-  <input type='submit' name='envio'>
+  <input type='submit' name='bloqueo'>
   </form>";
 ?>

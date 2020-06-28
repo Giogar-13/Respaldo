@@ -2,13 +2,6 @@
 <form action="../php/nuevafoto.php" method="POST" enctype="multipart/form-data">
         <label>Foto de perfil</label>
         <input type="file" name="fotoPerfil" require>
-        <br><br>
-        <label>Cambiar correo eléctronico</label>
-        <input type="text" name="correoElectronico" pattern=".+@.+\..+" require>
-        <br><br>
-        <label>Cambiar Contraseña</label>
-        <input type="password" name="nuevaContra" pattern="(?=.*[A-Z])(?=.*[\.,!@#$&*])(?=.*[0-9])(?=.*[a-z]).{10,}" title="La contraseña debe tener 10 caracteres de longitud, mayúsculas, minúsculas, números y caracteres especiales." require>
-        <br><br>
         <input type="submit" name="Enviar">
 </form>
 </html>
@@ -32,7 +25,7 @@ if (isset($_FILES['fotoPerfil']))
   $file_info=$_FILES['fotoPerfil']['tmp_name'];
   //Obtiene la ubicación temporal del archivo
 
-  $file_store="../statics/img/perfiles/".$file_name;
+  $file_store="../../statics/img/perfiles/".$file_name;
   //Da una ruta de almacenamiento
 
       if ($file_type="jpg"||"jpeg"||"png")
@@ -58,26 +51,6 @@ if (isset($_FILES['fotoPerfil']))
       else {
         echo "El formato no es correcto";
       }
-}
-
-if (isset($_POST['correoElectronico'])&& preg_match('/.+@.+\..+/',$_POST['correoElectronico'])){
-  $NuevoCorreo=strip_tags(mysqli_real_escape_string($conexion,$_POST['correoElectronico']));
-
-
-  $NuevoCorreo=base64_encode($NuevoCorreo);//Pasa el texto a base 64
-  $NuevoCorreo=bin2hex($NuevoCorreo);
-  $NuevoCorreo = "UPDATE usuario SET Correo ='$NuevoCorreo' WHERE id_usuario LIKE \"$usu\"";
-  mysqli_query($conexion, $NuevoCorreo);
-}
-
-if (isset($_POST['nuevaContra']) && preg_match('/(?=.*[A-Z])(?=.*[\.,!@#$&*])(?=.*[0-9])(?=.*[a-z]).{10,}/',$_POST['nuevaContra'])){
-$NuevaContra=strip_tags(mysqli_real_escape_string($conexion,$_POST['nuevaContra']));
-
-$NuevaContra=$NuevaContra."EBaTdDtDFDtGZ4uBnqmq3BvANFU2J2";
-$NuevaContra=hash('sha256', $NuevaContra);
-
-  $NuevaContra = "UPDATE usuario SET Contrasena ='$NuevaContra' WHERE id_usuario LIKE \"$usu\"";
-  mysqli_query($conexion, $NuevaContra);
 }
 echo "<a href='../../templates/principalEncuestas.html'>Regresar</a>";
 

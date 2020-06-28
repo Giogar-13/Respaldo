@@ -102,8 +102,8 @@ if ($llen){
   mysqli_real_escape_string ($conexion, $cumple);
   mysqli_real_escape_string ($conexion, $ntrabajador);
   mysqli_real_escape_string ($conexion, $cuenta);
-  $img = "../statics/img/perfiles/perfil.jpg";
-  $reg = "INSERT INTO usuario (id_usuario,numeroTrabajador,Nombre,ApellidoP,ApellidoM,Tipo,Correo,Contrasena,Cumple,img) VALUES(\"$cuenta\",\"$ntrabajador\",\"$nombre\",\"$aP\",\"$aM\",\"$tipo\",\"$correo\",\"$contraseña\",\"$cumple\",\"$img\")";
+  $img = "../../statics/img/perfiles/perfil.jpg";
+  $reg = "INSERT INTO usuario (id_usuario,numeroTrabajador,Nombre,ApellidoP,ApellidoM,Tipo,Correo,Contrasena,Cumple,img, Estado) VALUES(\"$cuenta\",\"$ntrabajador\",\"$nombre\",\"$aP\",\"$aM\",\"$tipo\",\"$correo\",\"$contraseña\",\"$cumple\",\"$img\",1)";
   mysqli_query($conexion, $reg);
   header('Location: ../../index.html');
 }

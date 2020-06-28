@@ -29,8 +29,9 @@ div.botones #botones {
     width: 20%;
     display: flex;
 }
-div.botones #botones a{
-  margin-left: 50%;
+
+div.botones #botones a {
+    margin-left: 50%;
 }
 
 div.botones {
